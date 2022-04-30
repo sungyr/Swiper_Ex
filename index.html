@@ -13,5 +13,27 @@
     />
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <section class="swiper-wrapper">
+        <article class="swiper-slide">1</article>
+        <article class="swiper-slide">2</article>
+        <article class="swiper-slide">3</article>
+        <article class="swiper-slide">4</article>
+        <article class="swiper-slide">5</article>
+      </section>
+    </main>
+
+    <script>
+      const swiper = new Swiper("main", {
+        speed: 400,
+        loop: true,
+        direction: "horizontal",
+        grabCursor: true,
+        slidesPerView: "auto",
+        spaceBetween: 17,
+        centeredSlides: true,
+      });
+    </script>
+  </body>
 </html>
